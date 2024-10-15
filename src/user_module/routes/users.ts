@@ -7,6 +7,7 @@ const routes = (app: Application) => {
   app.get('/', (req: Request, res: Response) => {
     res.send('Hello, TypeScript + Node.js + Express!');
   });
+
   app.get(`/${userRoute}`, userController.users);
   app.get(`/${userRoute}/:id`, userController.user);
 
